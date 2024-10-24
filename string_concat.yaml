@@ -1,0 +1,18 @@
+plugin_name: string_concat
+description: "Concatenate a string with a prefix"
+type: transform
+connectionType: local
+executionMode: ts
+inputs:
+  input_1: 
+    type: "string"
+    description: "The input string to concatenate"
+  prefix: 
+    type: "string"
+    description: "The prefix to add to the input string"
+optionalInputs:
+  #none for now
+outputs:
+  output: 
+    type: "string"
+    description: "The concatenated string"

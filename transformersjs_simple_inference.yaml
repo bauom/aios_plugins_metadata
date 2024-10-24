@@ -1,0 +1,31 @@
+plugin_name: transformersjs_simple_inference
+description: "Run inference with Transformers.js"
+type: inference
+connectionType: local
+executionMode: ts
+inputs:
+  model: 
+    type: "string"
+    description: "The model to use for inference"
+    default: "onnx-community/Qwen2.5-0.5B"
+  prompt: 
+    type: "string"
+    description: "The prompt to use for inference"
+    default: "what is the color of the sky?"
+optionalInputs:
+  max_length: 
+    type: "number"
+    description: "The max_length to use for inference"
+    default: 100
+  temperature: 
+    type: "number"
+    description: "The temperature to use for inference"
+    default: 0.7
+  top_p: 
+    type: "number"
+    description: "The top_p to use for inference"
+    default: 0.9
+outputs:
+  result: 
+    type: "string"
+    description: "The result of the inference"
