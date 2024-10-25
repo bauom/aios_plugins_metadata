@@ -1,0 +1,18 @@
+plugin_name: concat_str
+description: "Filter out bad words from the text"
+type: control_flow
+executionMode: ts
+connectionType: local
+inputs:
+  input1:
+    type: "string"
+    description: "first text"
+    default: ""
+  input2:
+    type: "string"
+    description: "second text"
+    default: ""
+outputs:
+  result:
+    type: "string"
+    description: "return the concatenation of input1 and input2"
