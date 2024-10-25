@@ -1,0 +1,18 @@
+plugin_name: bad_words_filter
+description: "Filter out bad words from the text"
+type: control_flow
+executionMode: ts
+connectionType: local
+inputs:
+  text:
+    type: "string"
+    description: "The text to check for bad words"
+    default: ""
+  words:
+    type: "array"
+    description: "The words to check for"
+    default: ["bad", "inappropriate", "offensive"]
+outputs:
+  result:
+    type: "string"
+    description: "return null if the text contains any of the words, otherwise return the text"
